@@ -1,2 +1,2 @@
 # Task-Management
-Config files for my GitHub profile.
+A task-management system for daily routines
