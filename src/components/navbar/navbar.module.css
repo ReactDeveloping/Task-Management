@@ -1,0 +1,116 @@
+.navbar {
+   position: relative;
+   top: 0;
+   width: 100%;
+   height: 70px;
+   z-index: 2;
+   background-color: rgb(27, 27, 27);
+   display: flex;
+   align-items: center;
+   justify-content: start;
+
+
+
+
+   & .logoHolder {
+      width: 210px;
+      padding-right: 20px;
+      height: 50px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 5px;
+
+
+
+      & .logo {
+         width: 40px;
+      }
+
+      & .title {
+         color: white;
+         font: 20px vazirb;
+      }
+   }
+
+   & .make {
+      padding: 5px 15px;
+      border: none;
+      font: 16px vazirl;
+      border-radius: 10px;
+      background-color: rgb(41, 88, 175);
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:hover {
+         background-color: rgb(29, 77, 152);
+      }
+
+      &:active {
+         background-color: rgb(24, 66, 134);
+      }
+   }
+
+   & .options {
+      width: fit-content;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+
+
+
+      & .item {
+         color: white;
+         font: 16px vazirl;
+         padding: 5px 20px;
+         border-radius: 10px;
+
+         &:hover {
+            background-color: rgb(46, 46, 46);
+         }
+      }
+   }
+
+   & .list {
+      width: 250px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0);
+      border: none;
+      border-bottom: 1px solid rgb(0,121,0);
+      font: 15px vazirl;
+      outline: none;
+      color: white;
+      
+      
+      &::placeholder {
+         color: rgb(141, 141, 141);
+      }
+   }
+
+   & .addList {
+      padding: 10px 20px;
+      display: flex;
+      margin-right: 10px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(42, 61, 38);
+      color: rgb(255, 255, 255);
+      font: 13px vazirm;
+      border: none;
+      outline: none;
+      
+      
+      &:hover {
+         background-color: rgb(23, 83, 23);
+      }
+
+      &:active {
+         background-color: rgb(15, 59, 15);
+      }
+   }
+
+}

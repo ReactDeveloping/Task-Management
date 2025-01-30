@@ -1,0 +1,36 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --title-color: rgb(199, 199, 199);
+  --icon-color: rgb(129, 235, 119);
+}
+
+@font-face {
+  font-family: vazirl;
+  src: url(./assets/fonts/Vazir-Light.ttf);
+}
+
+@font-face {
+  font-family: vazirm;
+  src: url(./assets/fonts/Vazir-Medium.ttf);
+}
+
+@font-face {
+  font-family: vazirb;
+  src: url(./assets/fonts/Vazir-Bold.ttf);
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}

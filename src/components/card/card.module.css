@@ -1,0 +1,380 @@
+.cardHolder {
+   padding: 10px;
+   right: 0;
+   top: 0;
+   border-radius: 20px;
+   width: 312px;
+   height: fit-content;
+   background-color: rgba(255, 255, 255, 0.3);
+   display: flex;
+   gap: 5px;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   transition: 0.5s;
+
+   &:hover {
+      backdrop-filter: blur(3px);
+      background-color: rgba(255, 255, 255, 0.4);
+   }
+
+
+
+   & .editHolder {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & .editInput {
+         width: 230px;
+         height: 30px;
+         padding-right: 10px;
+         font: 15px vazirm;
+         background-color: rgb(255, 255, 255);
+         border: none;
+         outline: none;
+         border-radius: 10px;
+         color: rgb(44, 44, 44);
+      }
+
+      & .save {
+         padding: 5px 10px;
+         font: 13px vazirm;
+         background-color: rgb(43, 151, 0);
+         border: none;
+         outline: none;
+         border-radius: 10px;
+         color: rgb(255, 255, 255);
+      }
+   }
+
+
+   & .titleHolder {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & .title {
+         font: 20px vazirb;
+         color: rgb(255, 255, 255);
+         width: 220px;
+         padding-right: 5px;
+      }
+
+      & .edit {
+         padding: 5px 10px;
+         font: 13px vazirm;
+         background-color: rgb(255, 255, 255);
+         border: none;
+         outline: none;
+         border-radius: 10px;
+         color: rgb(44, 44, 44);
+
+         &:hover {
+            background-color: rgb(230, 230, 230);
+         }
+
+         &:active {
+            background-color: rgb(201, 201, 201);
+         }
+      }
+   }
+
+
+
+
+
+
+   & .inputContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      height: 50px;
+
+
+      & .icons {
+         width: 35px;
+         height: 35px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 5px;
+   
+         &:hover {
+            background-color: rgba(63, 63, 63, 0.541);
+         }
+   
+   
+   
+         & .addTask {
+            display: flex;
+            font-size: 22px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+         }
+      }
+   
+      & .taskInput {
+         width: 260px;
+         height: 33px;
+         border-radius: 10px;
+         background-color: rgba(255, 255, 255, 0.4);
+         border: none;
+         padding-right: 10px;
+         font: 15px vazirl;
+         outline: none;
+         
+         
+         &::placeholder {
+            color: rgb(37, 37, 37);
+         }
+         
+         &:focus {
+            background-color: white;
+
+
+            &::placeholder {
+               color: rgb(163, 163, 163);
+            }
+         }
+   
+      }
+
+   }
+
+
+
+   & .tasks {
+      position: relative;
+      top: 0;
+      width: 295px;
+      border-radius: 15px;
+      height: 200px;
+      background-color: rgba(4, 0, 37, 0.7);
+      color: white;
+      font: 15px vazirl;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.5s;
+      overflow: hidden;
+
+
+      &:hover {
+         background-color: rgba(4, 0, 37, 1);
+      }
+
+      & .taskTitle {
+         padding: 10px 10px 5px 5px;
+         right: 0;
+         width: 100%;
+         top: 0;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         
+
+
+         & .input {
+            width: 230px;
+            height: 30px;
+            border-radius: 10px;
+            padding-right: 5px;
+            font: 15px vazirl;
+            border: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+
+            &:focus {
+               background-color: white;
+               color: black;
+            }
+         }
+
+
+         & .leftIcons {
+            width: 40px;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+         
+
+            & .taskSize {
+               width: 20px;
+               height: 20px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+
+               & .sizeIcon {
+                  width: 18px;
+                  height: 18px;
+                  position: absolute;
+                  font-size: 15px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: rgba(255, 255, 255, 0.7);
+                  
+   
+                  &:hover {
+                     color: rgb(255, 255, 255);
+                  }
+               }
+   
+               
+            }
+
+
+            & .dots {
+               font-size: 18px;
+               border-radius: 5px;
+               color: rgba(255, 255, 255, 0.7);
+
+               &:hover {
+                  color: rgb(255, 255, 255);
+               }
+            }
+         }
+
+         & .options {
+            position: absolute;
+            left: 25px;
+            display: none;
+            top: 0;
+            width: fit-content;
+            height: fit-content;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            overflow: hidden;
+            
+            & .option {
+               padding: 7px 20px;
+               color: rgb(88, 88, 88);
+               font: 13px vazirm;
+               text-align: center;
+
+               &:hover {
+                  background-color: rgb(235, 235, 235);
+               }
+            }
+         }
+
+         .close {
+            display: block;
+         }
+      }
+
+      & .desHolder {
+         width: 100%;
+         height: 80%;
+         display: flex;
+         align-items: start;
+         justify-content: center;
+   
+         & .close {
+            display: none;
+         }
+         
+         & .description {
+            width: 95%;
+            height: 95%;
+            border-radius: 10px;
+            resize: none;
+            background-color: rgba(4, 0, 37, 0.7);
+            border: none;
+            color: white;
+            outline: none;
+            padding: 5px 10px;
+            font: 12px vazirl;
+            display: block;
+
+            &:focus {
+               background-color: white;
+               color: rgb(61, 61, 61);
+            }
+         }
+
+      }
+
+
+
+      & .delete {
+         position: absolute;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: black;
+         display: none;
+         border-radius: 15px;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         gap: 10px;
+
+         & button {
+            padding: 5px 20px;
+            border-radius: 6px;
+            border: none;
+            font: 12px vazirm;
+            background-color: rgb(21, 21, 21);
+            
+            &:hover {
+               background-color: rgb(43, 43, 43);
+            }
+         }
+
+         & .no {
+            color: green;
+            margin-right: 10px;
+         }
+
+         & .yes {
+            color: red;
+         }
+      }
+
+      & .open {
+         display: flex;
+      }
+
+      & .optionsContainer {
+         width: 90%;
+         display: none;
+         height: 100%;
+         background-color: rgb(0, 0, 0);
+         position: absolute;
+         border-radius: 10px;
+         top: 0;
+         align-items: center;
+         justify-content: center;
+
+
+         & .exit {
+            color: white;
+            margin: 5px;
+            font-size: 20px;
+         }
+      }
+
+      & .display {
+         display: block;
+      }
+   }
+
+   & .shrink {
+      height: 50px;
+   }
+
+   
+}
